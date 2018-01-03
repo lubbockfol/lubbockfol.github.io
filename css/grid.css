@@ -1,0 +1,38 @@
+.fol-grid {
+  display: grid;
+  display: -ms-grid; /* makes grid work in Edge, but not IE */
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 1fr;
+       -ms-grid-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+       -ms-grid-rows: auto 1fr auto;
+  font-family: Helvetica, Arial, 'sans-serif';
+}
+
+.fol-header {
+    grid-area: header;
+    -ms-grid-row: 1; -ms-grid-column: 1;
+    padding: 0 60px 0 60px;
+    /* font-size: 24px;
+    font-weight: bold; */
+    display: flex; /* both display: flex & align-items: center are necessary to make header align vertically */
+    align-items: center;
+}
+.fol-logo {
+    display: block;
+    margin: 0 auto; /* auto = center horizontally */
+}
+.fol-main {
+  grid-area: main;
+  -ms-grid-row: 2; -ms-grid-column: 1;
+  padding: 10px 20px;
+}
+.fol-footer {
+  grid-area: footer;
+  -ms-grid-row: 3; -ms-grid-column: 1;
+  background-color: #001723;
+  text-align: center;
+  font-size: small;
+  color: white;
+  padding: 10px 20px 20px 40px;
+}

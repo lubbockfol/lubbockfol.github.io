@@ -2,25 +2,56 @@
 /* CSS Document */
 
 h1 {
-    font-family: Helvetica, Arial, 'sans-serif'; font-weight: bold
+    font-family: Helvetica, Arial, 'sans-serif'; font-weight: bold; color: #003957;
 }
 
-div.margin {
-    font-family: Helvetica, Arial, 'sans-serif'; padding-left: 60px; padding-right: 60px
+h2 {
+    font-family: Helvetica, Arial, 'sans-serif'; font-weight: bold; color: #003957;
 }
 
 p {
-    font-family: Helvetica, Arial, 'sans-serif'; line-height: 150%
+    font-family: Helvetica, Arial, 'sans-serif'; line-height: 150%;
 }
 
 p.footer {
-    font-family: Helvetica, Arial, 'sans-serif'; line-height: 100%
+    font-family: Helvetica, Arial, 'sans-serif';
+}
+
+p.xlarge {
+    font-family: Helvetica, Arial, 'sans-serif'; font-size: x-large; padding-left: 60px; padding-right: 60px; line-height: 200%;
 }
 
 p.large {
-    font-family: Helvetica, Arial, 'sans-serif'; font-size: large; padding-left: 60px; padding-right: 60px; line-height: 200%
+    font-family: Helvetica, Arial, 'sans-serif'; font-size: large; padding-left: 60px; padding-right: 60px; line-height: 200%;
+}
+
+p.small {
+    font-family: Helvetica, Arial, 'sans-serif'; font-size: small; padding-left: 60px; padding-right: 60px; line-height: 100%;
+}
+
+#cssmenu li {
+    line-height: normal;
 }
 
 li {
-    line-height: 150%
+    line-height: 150%;
+}
+
+a {
+    color: #003957;
+}
+
+a:hover {
+  color: #0080c0;
+}
+.fol-footer a {
+  color: white;
+}
+.fol-footer a:hover {
+  color: orange;
+}
+.fol-logo img {
+    max-width: 100%;
+    width: 100%; /* makes scaling work in IE */
+    height: auto;
 }
